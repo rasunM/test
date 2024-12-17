@@ -3,16 +3,12 @@ import CommonFooter from "../../common/footer"
 import { RiArrowDropRightFill } from "react-icons/ri"
 import Image from "next/image"
 
-type DestinationDynamicTemplateProps = {
-    params: {
-        destination_tmp: string;
-    };
-}
+
 
 // Remove the 'async' from here
-export default function DestinationDynamicTemplate({ params }: DestinationDynamicTemplateProps) {
+export default function DestinationDynamicTemplate() {
     // Directly destructure destination_tmp from params (no 'await' needed)
-    const { destination_tmp } = params;
+    
     
     return (
         <div className="font-poppins overflow-x-hidden">
@@ -23,7 +19,7 @@ export default function DestinationDynamicTemplate({ params }: DestinationDynami
                     <RiArrowDropRightFill className="size-7 mx-5"/>
                     <span>Destinations</span>
                     <RiArrowDropRightFill className="size-7 mx-5"/>
-                    <span>{destination_tmp}</span>
+                    <span>Destination</span>
                 </div>
                 <div>
                     <div className="text-4xl font-extrabold my-8">DESTINATIONS</div>
