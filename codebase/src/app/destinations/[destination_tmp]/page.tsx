@@ -8,8 +8,11 @@ interface DestinationDynamicTemplateProps {
         destination_tmp : string
     }
 }
-export default async function DestinationDynamicTemplate({params} : DestinationDynamicTemplateProps){
-    const {destination_tmp} = await params
+
+export default function DestinationDynamicTemplate({params} : DestinationDynamicTemplateProps) {
+ 
+    const { destination_tmp } = params;
+    
     return (
         <div className="font-poppins overflow-x-hidden">
             <CommonHeroSection textUpper="Discover The Island's Most Popular" textDown="Destination" image="/home_assests/mountain-back.jpg"/>
@@ -33,14 +36,10 @@ export default async function DestinationDynamicTemplate({params} : DestinationD
                     <span className="text-gray-600 ">Whether you're a history buff, foodie, or seeking adventure, our curated selection of blogs, articles, and guides will help you plan the perfect holiday. We have mapped out the best things to do, attractions and experiences in Sri Lanka for each destination, so you can make the most of your trip. Start planning your dream holiday now!</span>
                 </div>
                 <div className="flex gap-5 flex-wrap justify-between items-start my-8">
-                    // festivals list
+                    {/* festivals list */}
                 </div>
             </div>
             <CommonFooter/>
         </div>
     )
 }
-
-
-
-
