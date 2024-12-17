@@ -1,7 +1,6 @@
 import CommonHeroSection from "../../common/common_hero_section"
 import CommonFooter from "../../common/footer"
 import { RiArrowDropRightFill } from "react-icons/ri"
-import Card from "../components/card"
 import Image from "next/image"
 
 interface DestinationDynamicTemplateProps {
