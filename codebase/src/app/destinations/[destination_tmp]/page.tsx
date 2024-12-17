@@ -8,11 +8,7 @@ interface DestinationDynamicTemplateProps {
         destination_tmp : string
     }
 }
-
 export default function DestinationDynamicTemplate({params} : DestinationDynamicTemplateProps) {
- 
-    const { destination_tmp } = params;
-    
     return (
         <div className="font-poppins overflow-x-hidden">
             <CommonHeroSection textUpper="Discover The Island's Most Popular" textDown="Destination" image="/home_assests/mountain-back.jpg"/>
@@ -22,7 +18,7 @@ export default function DestinationDynamicTemplate({params} : DestinationDynamic
                     <RiArrowDropRightFill className="size-7 mx-5"/>
                     <span>Destinations</span>
                     <RiArrowDropRightFill className="size-7 mx-5"/>
-                    <span>{destination_tmp}</span>
+                    <span></span>
                 </div>
                 <div>
                     <div className="text-4xl font-extrabold my-8">DESTINATIONS</div>
